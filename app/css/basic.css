@@ -1,0 +1,690 @@
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto; }
+
+.header {
+  z-index: 1000;
+  width: 100%;
+  height: 115px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.5s;
+  /* Safari and Chrome */
+  -o-transition: all 0.5s;
+  /* Opera */ }
+  .header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .header .container nav {
+      width: 50%;
+      transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      /* Firefox 4 */
+      -webkit-transition: all 0.5s;
+      /* Safari and Chrome */
+      -o-transition: all 0.5s;
+      /* Opera */ }
+      .header .container nav li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /* Firefox 4 */
+        -webkit-transition: all 0.5s;
+        /* Safari and Chrome */
+        -o-transition: all 0.5s;
+        /* Opera */ }
+        .header .container nav li a {
+          text-decoration: none;
+          color: #777777;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
+          font-weight: 600; }
+          .header .container nav li a:hover {
+            color: #27a243;
+            cursor: pointer;
+            -webkit-transition: color 0.5s ease-out;
+            -moz-transition: color 0.5s ease-out;
+            -o-transition: color 0.5s ease-out;
+            transition: color 0.5s ease-out; }
+          .header .container nav li a:focus {
+            color: #27a243; }
+          .header .container nav li a:active {
+            color: #27a243; }
+
+.shrink {
+  height: 60px; }
+
+section {
+  z-index: 1; }
+
+.TitleSection {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background: url("../images/Background.png") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .TitleSection .blackFilter {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .TitleSection .TextIntroduction {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .TitleSection .TextIntroduction h1 {
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 0; }
+    .TitleSection .TextIntroduction h2 {
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 400;
+      color: #cccccc;
+      position: relative; }
+    .TitleSection .TextIntroduction .button {
+      background-color: #7cc576;
+      border: none;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #ffffff;
+      text-shadow: #777777 1px 1px; }
+      .TitleSection .TextIntroduction .button:hover {
+        background-color: #27a243;
+        cursor: pointer;
+        -webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out;
+        text-shadow: none; }
+
+.professional_services {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff; }
+  .professional_services .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+
+.sectionHeader {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.optionsRow {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around; }
+
+.option {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .option .optionTitle {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #000000; }
+  .option .optionText {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    color: #777;
+    text-align: center; }
+
+.sectionTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0; }
+
+.subtitle {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  color: #777; }
+
+.justRelax {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row; }
+  .justRelax .leftBox {
+    background-color: #e9e9e9;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 0; }
+    .justRelax .leftBox img {
+      float: right;
+      -webkit-animation: spin 8s linear infinite;
+      -moz-animation: spin 8s linear infinite;
+      animation: spin 8s linear infinite; }
+  .justRelax .rightBox {
+    height: 100%;
+    background: url("../images/AboutBackgroundMin.jpg") center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1; }
+    .justRelax .rightBox .minTransparent {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .justRelax .rightBox .minTransparent .justRelaxTextContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .justRelax .rightBox .minTransparent .justRelaxTextContainer h4 {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 0;
+          color: #ffffff; }
+          .justRelax .rightBox .minTransparent .justRelaxTextContainer h4 .greenAmp {
+            color: #7cc576; }
+        .justRelax .rightBox .minTransparent .justRelaxTextContainer .listTitle {
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 500;
+          color: #cccccc; }
+
+.list {
+  position: relative;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 500;
+  color: #cccccc; }
+  .list li {
+    list-style: none; }
+    .list li img {
+      position: relative; }
+
+.mainButton {
+  background-color: #7cc576; }
+  .mainButton:hover {
+    background-color: #27a243;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out; }
+
+.nextButton {
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px #777; }
+
+.latestProject {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff; }
+  .latestProject .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .latestProject .content {
+    z-index: 10; }
+    .latestProject .content .optionTitle {
+      margin-bottom: 0;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #000000; }
+    .latestProject .content .optionText {
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 500;
+      color: #777; }
+    .latestProject .content .contentList {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row; }
+      .latestProject .content .contentList .imagesList {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+      .latestProject .content .contentList .imagesListDescription {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #ffffff; }
+        .latestProject .content .contentList .imagesListDescription .imageDescription .optionTitle {
+          text-transform: capitalize;
+          margin: 0;
+          padding: 0; }
+        .latestProject .content .contentList .imagesListDescription .imageDescription .optionText {
+          margin: 0;
+          padding: 0; }
+    .latestProject .content a {
+      text-transform: uppercase;
+      color: #7cc576;
+      font-family: "Montserrat", sans-serif;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .latestProject .content a .arrow_right {
+        position: relative;
+        fill-rule: evenodd;
+        fill: #7cc576; }
+      .latestProject .content a:hover {
+        color: #27a243;
+        cursor: pointer;
+        -webkit-transition: color 0.5s ease-out;
+        -moz-transition: color 0.5s ease-out;
+        -o-transition: color 0.5s ease-out;
+        transition: color 0.5s ease-out; }
+        .latestProject .content a:hover .arrow_right {
+          fill: #27a243;
+          cursor: pointer; }
+  .latestProject .tabletImage {
+    z-index: 1;
+    position: absolute;
+    right: 0; }
+
+.cultureAndValues {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9; }
+  .cultureAndValues .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .cultureAndValues .container .content {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      .cultureAndValues .container .content .imagesRow {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .cultureAndValues .container .content .imagesRow .line {
+          background-color: #777777; }
+      .cultureAndValues .container .content .textRow {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .cultureAndValues .container .content .textRow .textBox {
+          height: 100%; }
+          .cultureAndValues .container .content .textRow .textBox .optionTitle {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            color: #000000; }
+          .cultureAndValues .container .content .textRow .textBox .optionText {
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: 500;
+            color: #777;
+            text-align: center; }
+
+.clients {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .clients .container .sectionHeader {
+    width: 100%; }
+  .clients .container .clientsComments {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .clients .container .clientsComments .commentRow {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .clients .container .clientsComments .commentRow .photographyComment {
+        border-radius: 100%;
+        background-color: #f9f9f9; }
+      .clients .container .clientsComments .commentRow .comment {
+        background-color: #f9f9f9;
+        z-index: 100;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .clients .container .clientsComments .commentRow .comment .textBox {
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 500; }
+        .clients .container .clientsComments .commentRow .comment .text {
+          color: #777777;
+          text-align: center; }
+          .clients .container .clientsComments .commentRow .comment .text .italic {
+            font-style: italic; }
+        .clients .container .clientsComments .commentRow .comment .signature {
+          text-align: center;
+          color: #7cc576; }
+
+.contact {
+  width: 100%;
+  background-color: #7cc576;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .contact .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .contact .container .sectionHeader {
+      height: auto;
+      width: auto; }
+      .contact .container .sectionHeader .sectionTitle {
+        color: #ffffff; }
+    .contact .container .contactButton {
+      background-color: #7cc576;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif; }
+      .contact .container .contactButton:hover {
+        background-color: #27a243;
+        cursor: pointer;
+        -webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out; }
+
+.logos {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff; }
+  .logos .container .logosBox {
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+.bottomBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222222; }
+  .bottomBox .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .bottomBox .container .contentBox {
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .bottomBox .container .contentBox .optionTitle {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0; }
+      .bottomBox .container .contentBox .content {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row; }
+        .bottomBox .container .contentBox .content .imagesRow {
+          height: 100%; }
+          .bottomBox .container .contentBox .content .imagesRow .phone {
+            position: relative; }
+        .bottomBox .container .contentBox .content .imageDescription {
+          height: 100%;
+          width: 100%; }
+          .bottomBox .container .contentBox .content .imageDescription p {
+            margin: 0;
+            color: #ffffff;
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: 500; }
+          .bottomBox .container .contentBox .content .imageDescription a {
+            color: #ffffff;
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: 500; }
+          .bottomBox .container .contentBox .content .imageDescription .mail {
+            position: relative; }
+        .bottomBox .container .contentBox .content .first {
+          cursor: text; }
+        .bottomBox .container .contentBox .content .latest {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-transform: capitalize; }
+        .bottomBox .container .contentBox .content .media {
+          position: relative; }
+
+.contentTweet {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
+.tweetBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .tweetBox .tweeterLogo {
+    height: 100%; }
+  .tweetBox .tweet {
+    height: 100%;
+    color: #ffffff; }
+    .tweetBox .tweet p {
+      margin: 0;
+      padding-bottom: 0;
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 500; }
+    .tweetBox .tweet .hash {
+      padding-top: 0;
+      font-family: "Roboto Slab", sans-serif;
+      font-weight: 600;
+      color: #ffffff; }
+
+footer {
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center; }
+  footer .container {
+    position: relative; }
+    footer .container .iconBox {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto; }
+    footer .container p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #555555; }

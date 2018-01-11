@@ -1,0 +1,1004 @@
+$greyColorTitle : #777;
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontRoboto: 'Roboto Slab', sans-serif;
+$lightGreen: #7cc576;
+$hoverGreen: #27a243;
+$grey: #777777;
+$lightGrey: #f9f9f9;
+$greySubtitle: #cccccc;
+$white: #ffffff;
+$blackish: #222222;
+
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin background-center($url) {
+  background: url($url) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin transparent {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+@mixin menu_transition {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s; /* Opera */
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+
+@media all and (min-width: 1250px) {
+
+  .header {
+    .container {
+      .logo {
+        width: 143px;
+        height: 29px;
+      }
+      //logo
+      nav {
+        min-width: 500px;
+        .menu {
+          @include flexbox;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        //menu
+      }
+      //nav
+      .toggle-nav {
+        display: none;
+      }
+      //toggle-nav
+    }
+    //.container
+  }
+  //.header
+
+  .TitleSection {
+
+    .TextIntroduction {
+      top: 35px;
+      width: 528px;
+      height: 295px;
+      h1 {
+        font-size: 57px;
+        margin-top: -10px;
+      }
+      //h1
+      h2 {
+        font-size: 20px;
+        bottom: 10px;
+      }
+      //h2
+      .button {
+        width: 210px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 15px;
+        line-height: 30px;
+      }
+      //button
+    }
+    //TextIntroduction
+  }
+  //.TitleSection
+
+  .professional_services {
+    height: 535px;
+    margin-top: -58px;
+    .container {
+      height: 335px;
+    }//container
+  }//professional_services
+
+  //sectionHeader
+
+  .optionsRow {
+    height: 180px;
+    flex-direction: row;
+  }//optionsRow
+
+  .option {
+    width: 290px;
+    .optionTitle {
+      font-size: 12pt;
+    }//optionTitle
+    .optionText {
+      font-size: 10.5pt;
+    }//optionText
+  }//option
+
+  .heartDesign {
+    width: 54px;
+    height: 48px;
+  }
+
+  .mobileWeb {
+    width: 40px;
+    height: 52px;
+  }
+
+  .graphMarketing {
+    width: 55px;
+    height: 44px;
+  }
+
+  .IconContainer {
+    height: 52px;
+  }
+  .sectionTitle {
+    font-size: 25pt;
+  }//sectionTitle
+
+  .subtitle {
+    font-size: 11pt;
+  }//subtitle
+
+  .justRelax {
+    height: 616px;
+    .leftBox {
+      width: 30%;
+      min-width: 200px;
+      img {
+        width: 414px;
+        height: 414px;
+        margin-right: -212px;
+      }
+      //img
+    }
+    //leftBox
+    .rightBox {
+      width: 70%;
+      .minTransparent {
+        .justRelaxTextContainer {
+          height: 416px;
+          margin-left: 88px;
+          h4 {
+            font-size: 25pt;
+            //greenAmp
+          }
+          //h4
+          .listTitle {
+            font-size: 11pt;
+            width: 500px;
+          }
+          //listTitle
+        }
+        //justRelaxTextContainer
+      }
+      //minTransparent
+    }
+    //rightBox
+  }
+  //justRelax
+
+  .list {
+    left: -37px;
+    font-size: 11pt;
+    li {
+      img {
+        top: 10px;
+        left: -4px;
+      }
+      //img
+    }
+    //li
+  }
+  //list
+
+//mainButton
+
+  .nextButton {
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    line-height: 20px;
+    font-size: 12pt;
+  }
+  //nextButton
+
+  .latestProject {
+    height: 824px;
+    .container {
+      height: 624px;
+    }
+    .content {
+      width: 470px;
+      height: 470px;
+      .optionTitle {
+        margin-top: 30px;
+      }
+      .optionText {
+        font-size: 10.5pt;
+      }
+      .contentList {
+        height: 274px;
+        .imagesList {
+          width: 73px;
+          margin-right: 10px;
+        }
+        .imagesListDescription {
+          .imageDescription {
+            .optionTitle {
+              font-size: 11pt;
+            }
+          }
+          //.imageDescription
+        }
+        //.imagesListDescription
+      }
+      //.contentList
+      a {
+        margin-top: 30px;
+        font-size: 12pt;
+        width: 140px;
+        .arrow_right {
+          top: 2px;
+        }
+      }
+    }
+    //.content
+    .tabletImage {
+      height: 599px;
+      width: 681px;
+      top: 1963px;
+    }//tabletImage
+  }
+  //.latestProject
+
+  .cultureAndValues {
+    width: 100%;
+    height: 560px;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9;
+    .container {
+      height: 360px;
+      @include flexbox;
+      flex-direction: column;
+      justify-content: space-around;
+      .sectionHeader {
+        height: 70px;
+      }
+      .content {
+        height: 206.03px;
+        justify-content: space-between;
+        .imagesRow {
+          width: 752px;
+          height: 92px;
+          img {
+            width: 91px;
+            height: 91px;
+          }
+          .line {
+            width: 170px;
+            height: 2px;
+          }
+        }
+        //.imagesRow
+        .textRow {
+          height: 91px;
+          .textBox {
+            width: 280px;
+
+            //.optionTitle
+            .optionText {
+              margin-top: 5px;
+              font-size: 10.5pt;
+            }
+            //.optionText
+          }
+          //.textRow
+        }
+        //.textBox
+      }
+      //.content
+    }
+    //.container
+  }
+  //.cultureAndValues
+
+  .clients {
+    height: 810px;
+    .container {
+      height: 645px;
+      .sectionHeader {
+        height: 65px;
+      }
+      //sectionHeader
+      .clientsComments {
+        height: 490px;
+        .commentRow {
+          height: 220px;
+          .photographyComment {
+            height: 220px;
+            width: 220px;
+          }
+          //photographyComment
+          .comment {
+            height: 173px;
+            width: 643px;
+            .textBox {
+              width: 550px;
+            }
+            .text {
+              font-size: 14pt;
+              .italic {
+                padding-right: 5px;
+              }
+            }
+            .signature {
+              font-size: 12pt;
+            }
+          }
+          //comment
+        }
+        //commentRow
+      }
+      //clientsComments
+    }
+    //container
+  }
+  //clients
+
+  .contact {
+    height: 250px;
+    .container {
+      height: 115px;
+
+      .contactButton {
+        height: 50px;
+        width: 175px;
+        border: solid 3px $white;
+        border-radius: 15px;
+        line-height: 30px;
+        font-size: 12pt;
+
+      }
+    }
+    //container
+  }
+  //contact
+
+  .logos {
+    height: 164px;
+    .container {
+      height: 45px;
+      .logosBox {
+        width: 785px;
+        .envato {
+          height: 30px;
+          width: 161px;
+        }
+        .wordPress {
+          height: 42px;
+          width: 186px;
+        }
+        .tuts {
+          height: 41px;
+          width: 131px;
+        }
+        .microlancer {
+          height: 42px;
+          width: 167px;
+        }
+      }
+      //logosBox
+    }
+    //container
+  }
+  //logos
+
+  .bottomBox {
+    height: 364px;
+    .container {
+      height: 245px;
+      .contentBox {
+        width: 32%;
+        .optionTitle {
+          font-size: 12.5pt;
+        }
+        //optionTitle
+        .content {
+          height: 201px;
+          .imagesRow {
+            width: 40px;
+            .location {
+              margin-bottom: 30px;
+            }
+            .phone {
+              left: 2px;
+              margin-bottom: 22px;
+            }
+          }
+          //imageRow
+
+          .imageDescription {
+
+            p {
+              margin-bottom: 16px;
+              font-size: 11pt;
+            }
+            a {
+              font-size: 11pt;
+            }
+            .mail {
+              top: 25px;
+            }
+          }
+          //imageDescription
+          .first {
+            width: 200px;
+          }
+
+          .news {
+            width: 26px;
+            height: 21px;
+          }
+          .media {
+            width: 17px;
+            height: 20px;
+            left: 4px;
+          }
+        }
+        //content
+      }
+      //contentBox
+    }
+    //container
+  }
+  //bottomBox
+
+  .contentTweet {
+    height: 201px;
+  }
+  .tweetBox {
+    max-width: 300px;
+    .tweeterLogo {
+      width: 43px;
+    }
+    .tweet {
+      width: 255px;
+      p {
+        padding-left: 7px;
+        font-size: 11pt;
+      }
+      .hash {
+        padding-left: 7px;
+        font-size: 11pt;
+      }
+      .published {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 8pt;
+      }
+    }
+    //tweet
+  }
+  //tweetBox
+
+  footer {
+    height: 100px;
+    .container {
+      .iconBox {
+        width: 191px;
+        height: 55px;
+        img {
+          height: 41px;
+          width: 41px;
+        }
+
+      }
+      //iconBox
+      p {
+        font-size: 10pt;
+        line-height: 75px;
+      }
+    }
+    //container
+  }
+  //footer
+
+}
+
+@media all and (min-width: 900px) and (max-width: 1249px){
+
+  .header {
+    .container {
+      .logo {
+        width: 143px;
+        height: 29px;
+      }
+      //logo
+      nav {
+        min-width: 500px;
+        .menu {
+          @include flexbox;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        //menu
+      }
+      //nav
+      .toggle-nav {
+        display: none;
+      }
+      //toggle-nav
+    }
+    //.container
+  }
+  //.header
+
+  .TitleSection {
+
+    .TextIntroduction {
+      top: 35px;
+      width: 528px;
+      height: 295px;
+      h1 {
+        font-size: 57px;
+        margin-top: -10px;
+      }
+      //h1
+      h2 {
+        font-size: 20px;
+        bottom: 10px;
+      }
+      //h2
+      .button {
+        width: 210px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 15px;
+        line-height: 30px;
+      }
+      //button
+    }
+    //TextIntroduction
+  }
+  //.TitleSection
+
+  .professional_services {
+    height: 535px;
+    margin-top: -58px;
+    .container {
+      height: 335px;
+    }//container
+  }//professional_services
+
+  //sectionHeader
+
+  .optionsRow {
+    height: 180px;
+    flex-direction: row;
+  }//optionsRow
+
+  .option {
+    width: 290px;
+    .optionTitle {
+      font-size: 12pt;
+    }//optionTitle
+    .optionText {
+      font-size: 10.5pt;
+      padding: 0 10px;
+    }//optionText
+  }//option
+
+  .heartDesign {
+    width: 54px;
+    height: 48px;
+  }
+
+  .mobileWeb {
+    width: 40px;
+    height: 52px;
+  }
+
+  .graphMarketing {
+    width: 55px;
+    height: 44px;
+  }
+
+  .IconContainer {
+    height: 52px;
+  }
+  .sectionTitle {
+    font-size: 25pt;
+  }//sectionTitle
+
+  .subtitle {
+    font-size: 11pt;
+  }//subtitle
+
+  .justRelax {
+    height: 616px;
+    .leftBox {
+      width: 30%;
+      min-width: 200px;
+      img {
+        width: 414px;
+        height: 414px;
+        margin-right: -212px;
+      }
+      //img
+    }
+    //leftBox
+    .rightBox {
+      width: 70%;
+      .minTransparent {
+        .justRelaxTextContainer {
+          height: 416px;
+          margin-left: 88px;
+          h4 {
+            font-size: 25pt;
+            //greenAmp
+          }
+          //h4
+          .listTitle {
+            font-size: 11pt;
+            width: 500px;
+          }
+          //listTitle
+        }
+        //justRelaxTextContainer
+      }
+      //minTransparent
+    }
+    //rightBox
+  }
+  //justRelax
+
+  .list {
+    left: -37px;
+    font-size: 11pt;
+    li {
+      img {
+        top: 10px;
+        left: -4px;
+      }
+      //img
+    }
+    //li
+  }
+  //list
+
+  //mainButton
+
+  .nextButton {
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    line-height: 20px;
+    font-size: 12pt;
+  }
+  //nextButton
+
+  .latestProject {
+    height: 824px;
+    .container {
+      height: 624px;
+    }
+    .content {
+      width: 470px;
+      height: 470px;
+      background-color: $white;
+      .optionTitle {
+        margin-top: 30px;
+      }
+      .optionText {
+        font-size: 10.5pt;
+      }
+      .contentList {
+        height: 274px;
+        .imagesList {
+          width: 73px;
+          margin-right: 10px;
+        }
+        .imagesListDescription {
+          .imageDescription {
+            .optionTitle {
+              font-size: 11pt;
+            }
+          }
+          //.imageDescription
+        }
+        //.imagesListDescription
+      }
+      //.contentList
+      a {
+        margin-top: 30px;
+        font-size: 12pt;
+        width: 140px;
+        .arrow_right {
+          top: 2px;
+        }
+      }
+    }
+    //.content
+    .tabletImage {
+      height: auto;
+      width: 500px;
+      top: 2110px;
+    }//tabletImage
+  }
+  //.latestProject
+
+  .cultureAndValues {
+    width: 100%;
+    height: 560px;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9;
+    .container {
+      height: 360px;
+      @include flexbox;
+      flex-direction: column;
+      justify-content: space-around;
+      .sectionHeader {
+        height: 70px;
+      }
+      .content {
+        height: 206.03px;
+        justify-content: space-between;
+        .imagesRow {
+          width: 80%;
+          height: 92px;
+          img {
+            width: 91px;
+            height: 91px;
+          }
+          .line {
+            width: 20%;
+            height: 2px;
+          }
+        }
+        //.imagesRow
+        .textRow {
+          height: 91px;
+          .textBox {
+            width: 280px;
+            padding: 0 10px;
+            //.optionTitle
+            .optionText {
+              margin-top: 5px;
+              font-size: 10.5pt;
+            }
+            //.optionText
+          }
+          //.textRow
+        }
+        //.textBox
+      }
+      //.content
+    }
+    //.container
+  }
+  //.cultureAndValues
+
+  .clients {
+    height: 810px;
+    .container {
+      height: 645px;
+      .sectionHeader {
+        height: 65px;
+        margin-bottom: 15px;
+      }
+      //sectionHeader
+      .clientsComments {
+        height: 490px;
+        .commentRow {
+          height: 220px;
+          .photographyComment {
+            height: 160px;
+            width: 160px;
+          }
+          //photographyComment
+          .comment {
+            height: 70%;
+            width: 80%;
+            max-width: 600px;
+            .textBox {
+              width: 90%;
+            }
+            .text {
+              font-size: 14pt;
+              .italic {
+                padding-right: 5px;
+              }
+            }
+            .signature {
+              font-size: 12pt;
+            }
+          }
+          //comment
+        }
+        //commentRow
+      }
+      //clientsComments
+    }
+    //container
+  }
+  //clients
+
+  .contact {
+    height: 250px;
+    .container {
+      height: 115px;
+      .sectionTitle {
+        font-size: 21pt;
+      }
+      .contactButton {
+        height: 50px;
+        width: 175px;
+        border: solid 3px $white;
+        border-radius: 15px;
+        line-height: 30px;
+        font-size: 12pt;
+
+      }
+    }
+    //container
+  }
+  //contact
+
+  .logos {
+    height: 164px;
+    .container {
+      height: 45px;
+      .logosBox {
+        width: 720px;
+        .envato {
+          height: auto;
+          width: 150px;
+        }
+        .wordPress {
+          height: auto;
+          width: 170px;
+        }
+        .tuts {
+          height: auto;
+          width: 120px;
+        }
+        .microlancer {
+          height: auto;
+          width: 155px;
+        }
+      }
+      //logosBox
+    }
+    //container
+  }
+  //logos
+
+  .bottomBox {
+    height: 364px;
+    .container {
+      height: 245px;
+      .contentBox {
+        width: 32%;
+        .optionTitle {
+          font-size: 12.5pt;
+        }
+        //optionTitle
+        .content {
+          height: 201px;
+          .imagesRow {
+            width: 40px;
+            .location {
+              margin-bottom: 32px;
+            }
+            .phone {
+              left: 2px;
+              margin-bottom: 22px;
+            }
+          }
+          //imageRow
+
+          .imageDescription {
+
+            p {
+              margin-bottom: 16px;
+              font-size: 10pt;
+            }
+            a {
+              font-size: 10pt;
+            }
+            .mail {
+              top: 25px;
+            }
+          }
+          //imageDescription
+          .first {
+            width: 200px;
+          }
+
+          .news {
+            width: 26px;
+            height: 21px;
+          }
+          .media {
+            width: 17px;
+            height: 20px;
+            left: 4px;
+          }
+        }
+        //content
+      }
+      //contentBox
+    }
+    //container
+  }
+  //bottomBox
+
+  .contentTweet {
+    height: 210px;
+  }
+  .tweetBox {
+    max-width: 300px;
+    .tweeterLogo {
+      width: 43px;
+    }
+    .tweet {
+      width: 255px;
+      p {
+        padding-left: 7px;
+        font-size: 10pt;
+      }
+      .hash {
+        padding-left: 7px;
+        font-size: 10pt;
+      }
+      .published {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 8pt;
+      }
+    }
+    //tweet
+  }
+  //tweetBox
+
+  footer {
+    height: 100px;
+    .container {
+      .iconBox {
+        width: 191px;
+        height: 55px;
+        img {
+          height: 41px;
+          width: 41px;
+        }
+
+      }
+      //iconBox
+      p {
+        font-size: 10pt;
+        line-height: 75px;
+      }
+    }
+    //container
+  }
+  //footer
+
+}//900-1249px;

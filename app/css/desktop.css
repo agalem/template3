@@ -1,0 +1,569 @@
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(-360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@media all and (min-width: 1250px) {
+  .header .container .logo {
+    width: 143px;
+    height: 29px; }
+  .header .container nav {
+    min-width: 500px; }
+    .header .container nav .menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+  .header .container .toggle-nav {
+    display: none; }
+  .TitleSection .TextIntroduction {
+    top: 35px;
+    width: 528px;
+    height: 295px; }
+    .TitleSection .TextIntroduction h1 {
+      font-size: 57px;
+      margin-top: -10px; }
+    .TitleSection .TextIntroduction h2 {
+      font-size: 20px;
+      bottom: 10px; }
+    .TitleSection .TextIntroduction .button {
+      width: 210px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 15px;
+      line-height: 30px; }
+  .professional_services {
+    height: 535px;
+    margin-top: -58px; }
+    .professional_services .container {
+      height: 335px; }
+  .optionsRow {
+    height: 180px;
+    flex-direction: row; }
+  .option {
+    width: 290px; }
+    .option .optionTitle {
+      font-size: 12pt; }
+    .option .optionText {
+      font-size: 10.5pt; }
+  .heartDesign {
+    width: 54px;
+    height: 48px; }
+  .mobileWeb {
+    width: 40px;
+    height: 52px; }
+  .graphMarketing {
+    width: 55px;
+    height: 44px; }
+  .IconContainer {
+    height: 52px; }
+  .sectionTitle {
+    font-size: 25pt; }
+  .subtitle {
+    font-size: 11pt; }
+  .justRelax {
+    height: 616px; }
+    .justRelax .leftBox {
+      width: 30%;
+      min-width: 200px; }
+      .justRelax .leftBox img {
+        width: 414px;
+        height: 414px;
+        margin-right: -212px; }
+    .justRelax .rightBox {
+      width: 70%; }
+      .justRelax .rightBox .minTransparent .justRelaxTextContainer {
+        height: 416px;
+        margin-left: 88px; }
+        .justRelax .rightBox .minTransparent .justRelaxTextContainer h4 {
+          font-size: 25pt; }
+        .justRelax .rightBox .minTransparent .justRelaxTextContainer .listTitle {
+          font-size: 11pt;
+          width: 500px; }
+  .list {
+    left: -37px;
+    font-size: 11pt; }
+    .list li img {
+      top: 10px;
+      left: -4px; }
+  .nextButton {
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    line-height: 20px;
+    font-size: 12pt; }
+  .latestProject {
+    height: 824px; }
+    .latestProject .container {
+      height: 624px; }
+    .latestProject .content {
+      width: 470px;
+      height: 470px; }
+      .latestProject .content .optionTitle {
+        margin-top: 30px; }
+      .latestProject .content .optionText {
+        font-size: 10.5pt; }
+      .latestProject .content .contentList {
+        height: 274px; }
+        .latestProject .content .contentList .imagesList {
+          width: 73px;
+          margin-right: 10px; }
+        .latestProject .content .contentList .imagesListDescription .imageDescription .optionTitle {
+          font-size: 11pt; }
+      .latestProject .content a {
+        margin-top: 30px;
+        font-size: 12pt;
+        width: 140px; }
+        .latestProject .content a .arrow_right {
+          top: 2px; }
+    .latestProject .tabletImage {
+      height: 599px;
+      width: 681px;
+      top: 1963px; }
+  .cultureAndValues {
+    width: 100%;
+    height: 560px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9; }
+    .cultureAndValues .container {
+      height: 360px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .cultureAndValues .container .sectionHeader {
+        height: 70px; }
+      .cultureAndValues .container .content {
+        height: 206.03px;
+        justify-content: space-between; }
+        .cultureAndValues .container .content .imagesRow {
+          width: 752px;
+          height: 92px; }
+          .cultureAndValues .container .content .imagesRow img {
+            width: 91px;
+            height: 91px; }
+          .cultureAndValues .container .content .imagesRow .line {
+            width: 170px;
+            height: 2px; }
+        .cultureAndValues .container .content .textRow {
+          height: 91px; }
+          .cultureAndValues .container .content .textRow .textBox {
+            width: 280px; }
+            .cultureAndValues .container .content .textRow .textBox .optionText {
+              margin-top: 5px;
+              font-size: 10.5pt; }
+  .clients {
+    height: 810px; }
+    .clients .container {
+      height: 645px; }
+      .clients .container .sectionHeader {
+        height: 65px; }
+      .clients .container .clientsComments {
+        height: 490px; }
+        .clients .container .clientsComments .commentRow {
+          height: 220px; }
+          .clients .container .clientsComments .commentRow .photographyComment {
+            height: 220px;
+            width: 220px; }
+          .clients .container .clientsComments .commentRow .comment {
+            height: 173px;
+            width: 643px; }
+            .clients .container .clientsComments .commentRow .comment .textBox {
+              width: 550px; }
+            .clients .container .clientsComments .commentRow .comment .text {
+              font-size: 14pt; }
+              .clients .container .clientsComments .commentRow .comment .text .italic {
+                padding-right: 5px; }
+            .clients .container .clientsComments .commentRow .comment .signature {
+              font-size: 12pt; }
+  .contact {
+    height: 250px; }
+    .contact .container {
+      height: 115px; }
+      .contact .container .contactButton {
+        height: 50px;
+        width: 175px;
+        border: solid 3px #ffffff;
+        border-radius: 15px;
+        line-height: 30px;
+        font-size: 12pt; }
+  .logos {
+    height: 164px; }
+    .logos .container {
+      height: 45px; }
+      .logos .container .logosBox {
+        width: 785px; }
+        .logos .container .logosBox .envato {
+          height: 30px;
+          width: 161px; }
+        .logos .container .logosBox .wordPress {
+          height: 42px;
+          width: 186px; }
+        .logos .container .logosBox .tuts {
+          height: 41px;
+          width: 131px; }
+        .logos .container .logosBox .microlancer {
+          height: 42px;
+          width: 167px; }
+  .bottomBox {
+    height: 364px; }
+    .bottomBox .container {
+      height: 245px; }
+      .bottomBox .container .contentBox {
+        width: 32%; }
+        .bottomBox .container .contentBox .optionTitle {
+          font-size: 12.5pt; }
+        .bottomBox .container .contentBox .content {
+          height: 201px; }
+          .bottomBox .container .contentBox .content .imagesRow {
+            width: 40px; }
+            .bottomBox .container .contentBox .content .imagesRow .location {
+              margin-bottom: 30px; }
+            .bottomBox .container .contentBox .content .imagesRow .phone {
+              left: 2px;
+              margin-bottom: 22px; }
+          .bottomBox .container .contentBox .content .imageDescription p {
+            margin-bottom: 16px;
+            font-size: 11pt; }
+          .bottomBox .container .contentBox .content .imageDescription a {
+            font-size: 11pt; }
+          .bottomBox .container .contentBox .content .imageDescription .mail {
+            top: 25px; }
+          .bottomBox .container .contentBox .content .first {
+            width: 200px; }
+          .bottomBox .container .contentBox .content .news {
+            width: 26px;
+            height: 21px; }
+          .bottomBox .container .contentBox .content .media {
+            width: 17px;
+            height: 20px;
+            left: 4px; }
+  .contentTweet {
+    height: 201px; }
+  .tweetBox {
+    max-width: 300px; }
+    .tweetBox .tweeterLogo {
+      width: 43px; }
+    .tweetBox .tweet {
+      width: 255px; }
+      .tweetBox .tweet p {
+        padding-left: 7px;
+        font-size: 11pt; }
+      .tweetBox .tweet .hash {
+        padding-left: 7px;
+        font-size: 11pt; }
+      .tweetBox .tweet .published {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 8pt; }
+  footer {
+    height: 100px; }
+    footer .container .iconBox {
+      width: 191px;
+      height: 55px; }
+      footer .container .iconBox img {
+        height: 41px;
+        width: 41px; }
+    footer .container p {
+      font-size: 10pt;
+      line-height: 75px; } }
+
+@media all and (min-width: 900px) and (max-width: 1249px) {
+  .header .container .logo {
+    width: 143px;
+    height: 29px; }
+  .header .container nav {
+    min-width: 500px; }
+    .header .container nav .menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+  .header .container .toggle-nav {
+    display: none; }
+  .TitleSection .TextIntroduction {
+    top: 35px;
+    width: 528px;
+    height: 295px; }
+    .TitleSection .TextIntroduction h1 {
+      font-size: 57px;
+      margin-top: -10px; }
+    .TitleSection .TextIntroduction h2 {
+      font-size: 20px;
+      bottom: 10px; }
+    .TitleSection .TextIntroduction .button {
+      width: 210px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 15px;
+      line-height: 30px; }
+  .professional_services {
+    height: 535px;
+    margin-top: -58px; }
+    .professional_services .container {
+      height: 335px; }
+  .optionsRow {
+    height: 180px;
+    flex-direction: row; }
+  .option {
+    width: 290px; }
+    .option .optionTitle {
+      font-size: 12pt; }
+    .option .optionText {
+      font-size: 10.5pt;
+      padding: 0 10px; }
+  .heartDesign {
+    width: 54px;
+    height: 48px; }
+  .mobileWeb {
+    width: 40px;
+    height: 52px; }
+  .graphMarketing {
+    width: 55px;
+    height: 44px; }
+  .IconContainer {
+    height: 52px; }
+  .sectionTitle {
+    font-size: 25pt; }
+  .subtitle {
+    font-size: 11pt; }
+  .justRelax {
+    height: 616px; }
+    .justRelax .leftBox {
+      width: 30%;
+      min-width: 200px; }
+      .justRelax .leftBox img {
+        width: 414px;
+        height: 414px;
+        margin-right: -212px; }
+    .justRelax .rightBox {
+      width: 70%; }
+      .justRelax .rightBox .minTransparent .justRelaxTextContainer {
+        height: 416px;
+        margin-left: 88px; }
+        .justRelax .rightBox .minTransparent .justRelaxTextContainer h4 {
+          font-size: 25pt; }
+        .justRelax .rightBox .minTransparent .justRelaxTextContainer .listTitle {
+          font-size: 11pt;
+          width: 500px; }
+  .list {
+    left: -37px;
+    font-size: 11pt; }
+    .list li img {
+      top: 10px;
+      left: -4px; }
+  .nextButton {
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    line-height: 20px;
+    font-size: 12pt; }
+  .latestProject {
+    height: 824px; }
+    .latestProject .container {
+      height: 624px; }
+    .latestProject .content {
+      width: 470px;
+      height: 470px;
+      background-color: #ffffff; }
+      .latestProject .content .optionTitle {
+        margin-top: 30px; }
+      .latestProject .content .optionText {
+        font-size: 10.5pt; }
+      .latestProject .content .contentList {
+        height: 274px; }
+        .latestProject .content .contentList .imagesList {
+          width: 73px;
+          margin-right: 10px; }
+        .latestProject .content .contentList .imagesListDescription .imageDescription .optionTitle {
+          font-size: 11pt; }
+      .latestProject .content a {
+        margin-top: 30px;
+        font-size: 12pt;
+        width: 140px; }
+        .latestProject .content a .arrow_right {
+          top: 2px; }
+    .latestProject .tabletImage {
+      height: auto;
+      width: 500px;
+      top: 2110px; }
+  .cultureAndValues {
+    width: 100%;
+    height: 560px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9; }
+    .cultureAndValues .container {
+      height: 360px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .cultureAndValues .container .sectionHeader {
+        height: 70px; }
+      .cultureAndValues .container .content {
+        height: 206.03px;
+        justify-content: space-between; }
+        .cultureAndValues .container .content .imagesRow {
+          width: 80%;
+          height: 92px; }
+          .cultureAndValues .container .content .imagesRow img {
+            width: 91px;
+            height: 91px; }
+          .cultureAndValues .container .content .imagesRow .line {
+            width: 20%;
+            height: 2px; }
+        .cultureAndValues .container .content .textRow {
+          height: 91px; }
+          .cultureAndValues .container .content .textRow .textBox {
+            width: 280px;
+            padding: 0 10px; }
+            .cultureAndValues .container .content .textRow .textBox .optionText {
+              margin-top: 5px;
+              font-size: 10.5pt; }
+  .clients {
+    height: 810px; }
+    .clients .container {
+      height: 645px; }
+      .clients .container .sectionHeader {
+        height: 65px;
+        margin-bottom: 15px; }
+      .clients .container .clientsComments {
+        height: 490px; }
+        .clients .container .clientsComments .commentRow {
+          height: 220px; }
+          .clients .container .clientsComments .commentRow .photographyComment {
+            height: 160px;
+            width: 160px; }
+          .clients .container .clientsComments .commentRow .comment {
+            height: 70%;
+            width: 80%;
+            max-width: 600px; }
+            .clients .container .clientsComments .commentRow .comment .textBox {
+              width: 90%; }
+            .clients .container .clientsComments .commentRow .comment .text {
+              font-size: 14pt; }
+              .clients .container .clientsComments .commentRow .comment .text .italic {
+                padding-right: 5px; }
+            .clients .container .clientsComments .commentRow .comment .signature {
+              font-size: 12pt; }
+  .contact {
+    height: 250px; }
+    .contact .container {
+      height: 115px; }
+      .contact .container .sectionTitle {
+        font-size: 21pt; }
+      .contact .container .contactButton {
+        height: 50px;
+        width: 175px;
+        border: solid 3px #ffffff;
+        border-radius: 15px;
+        line-height: 30px;
+        font-size: 12pt; }
+  .logos {
+    height: 164px; }
+    .logos .container {
+      height: 45px; }
+      .logos .container .logosBox {
+        width: 720px; }
+        .logos .container .logosBox .envato {
+          height: auto;
+          width: 150px; }
+        .logos .container .logosBox .wordPress {
+          height: auto;
+          width: 170px; }
+        .logos .container .logosBox .tuts {
+          height: auto;
+          width: 120px; }
+        .logos .container .logosBox .microlancer {
+          height: auto;
+          width: 155px; }
+  .bottomBox {
+    height: 364px; }
+    .bottomBox .container {
+      height: 245px; }
+      .bottomBox .container .contentBox {
+        width: 32%; }
+        .bottomBox .container .contentBox .optionTitle {
+          font-size: 12.5pt; }
+        .bottomBox .container .contentBox .content {
+          height: 201px; }
+          .bottomBox .container .contentBox .content .imagesRow {
+            width: 40px; }
+            .bottomBox .container .contentBox .content .imagesRow .location {
+              margin-bottom: 32px; }
+            .bottomBox .container .contentBox .content .imagesRow .phone {
+              left: 2px;
+              margin-bottom: 22px; }
+          .bottomBox .container .contentBox .content .imageDescription p {
+            margin-bottom: 16px;
+            font-size: 10pt; }
+          .bottomBox .container .contentBox .content .imageDescription a {
+            font-size: 10pt; }
+          .bottomBox .container .contentBox .content .imageDescription .mail {
+            top: 25px; }
+          .bottomBox .container .contentBox .content .first {
+            width: 200px; }
+          .bottomBox .container .contentBox .content .news {
+            width: 26px;
+            height: 21px; }
+          .bottomBox .container .contentBox .content .media {
+            width: 17px;
+            height: 20px;
+            left: 4px; }
+  .contentTweet {
+    height: 210px; }
+  .tweetBox {
+    max-width: 300px; }
+    .tweetBox .tweeterLogo {
+      width: 43px; }
+    .tweetBox .tweet {
+      width: 255px; }
+      .tweetBox .tweet p {
+        padding-left: 7px;
+        font-size: 10pt; }
+      .tweetBox .tweet .hash {
+        padding-left: 7px;
+        font-size: 10pt; }
+      .tweetBox .tweet .published {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 8pt; }
+  footer {
+    height: 100px; }
+    footer .container .iconBox {
+      width: 191px;
+      height: 55px; }
+      footer .container .iconBox img {
+        height: 41px;
+        width: 41px; }
+    footer .container p {
+      font-size: 10pt;
+      line-height: 75px; } }

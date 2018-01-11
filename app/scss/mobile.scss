@@ -1,0 +1,563 @@
+$greyColorTitle : #777;
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontRoboto: 'Roboto Slab', sans-serif;
+$lightGreen: #7cc576;
+$hoverGreen: #27a243;
+$grey: #777777;
+$lightGrey: #f9f9f9;
+$greySubtitle: #cccccc;
+$white: #ffffff;
+$blackish: #222222;
+
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin background-center($url) {
+  background: url($url) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin transparent {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+@mixin menu_transition {
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s; /* Opera */
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+
+@media all and (max-width: 699px) {
+
+  .header {
+    .container {
+      .logo {
+        width: 143px;
+        height: 29px;
+      }
+      //logo
+      nav {
+        display: none;
+        background-color: $lightGrey;
+        position: absolute;
+        top:115px;
+        left: 0;
+        width: 100%;
+        .menu {
+          @include flexbox;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            font-size: 20px;
+            line-height: 2;
+            color: $hoverGreen;
+            &:hover {
+              color: $blackish;
+            }
+          }
+        }
+        //menu
+      }
+      //nav
+      .toggle-nav {
+        font-size: 22pt;
+        color: $grey;
+        line-height: 22px;
+      }
+
+      .toggle-quit {
+        font-size: 22pt;
+        color: $lightGreen;
+      }
+      //toggle-nav
+    }
+    //.container
+  }
+  //.header
+
+  .TitleSection {
+
+    .TextIntroduction {
+      top: 35px;
+      width: 90%;
+      height: 295px;
+      h1 {
+        font-size: 50px;
+        margin-top: -10px;
+      }
+      //h1
+      h2 {
+        font-size: 20px;
+        bottom: 10px;
+      }
+      //h2
+      .button {
+        width: 220px;
+        height: 70px;
+        border-radius: 40px;
+        font-size: 15px;
+        line-height: 30px;
+      }
+      //button
+    }
+    //TextIntroduction
+  }
+  //.TitleSection
+
+  .professional_services {
+    height: 1100px;
+    margin-top: -58px;
+    text-align: center;
+    .container {
+      height: 90%;
+      width: 90%;
+      .optionsRow {
+        height: 90%;
+        @include flexbox;
+        flex-direction: column;
+        .option {
+          height: 200px;
+          width: 100%;
+        }
+      }
+    }//container
+  }//professional_services
+
+  .sectionHeader {
+    .sectionTitle {
+      font-size: 40px;
+    }
+    .subtitle {
+      font-size: 25px;
+    }
+  }
+  //sectionHeader
+
+
+  .option {
+    .optionTitle {
+      font-size: 20pt;
+    }//optionTitle
+    .optionText {
+      font-size: 15pt;
+      margin-bottom: 20px;
+    }//optionText
+  }//option
+
+  .heartDesign {
+    width: auto;
+    height: 120%;
+  }
+
+  .mobileWeb {
+    width: auto;
+    height: 120%;
+  }
+
+  .graphMarketing {
+    width: auto;
+    height: 120%;
+  }
+
+  .IconContainer {
+    height: 40px;
+  }
+  .sectionTitle {
+    font-size: 25pt;
+  }//sectionTitle
+
+  .subtitle {
+    font-size: 11pt;
+  }//subtitle
+
+  .justRelax {
+    height: auto;
+    .leftBox {
+      display: none;
+
+    }
+    //leftBox
+    .rightBox {
+      width: 100%;
+      .minTransparent {
+        .justRelaxTextContainer {
+          height: 550px;
+          margin-left: 30px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          h4 {
+            font-size: 30pt;
+            //greenAmp
+          }
+          //h4
+          .listTitle {
+            font-size: 15pt;
+            width: auto;
+          }
+          //listTitle
+        }
+        //justRelaxTextContainer
+      }
+      //minTransparent
+    }
+    //rightBox
+  }
+  //justRelax
+
+  .list {
+    left: -37px;
+    font-size: 15pt;
+    li {
+      img {
+        top: 10px;
+        left: -4px;
+      }
+      //img
+    }
+    //li
+  }
+  //list
+
+  //mainButton
+
+  .nextButton {
+    width: 220px;
+    height: 70px;
+    border-radius: 40px;
+    line-height: 20px;
+    font-size: 12pt;
+  }
+  //nextButton
+
+  .latestProject {
+    height: 800px;
+    .container {
+      height: 700px;
+    }
+    .content {
+      width: 390px;
+      height: 470px;
+      background-color: $white;
+      .optionTitle {
+        font-size: 15pt;
+        margin-top: -30px;
+      }
+      .optionText {
+        font-size: 12pt;
+        width: 90%;
+      }
+      .contentList {
+        height: 274px;
+        .imagesList {
+          width: auto;
+          margin-right: 10px;
+        }
+        .imagesListDescription {
+          .imageDescription {
+            .optionTitle {
+              font-size: 13pt;
+            }
+            .optionText {
+              width: 90%;
+            }
+          }
+          //.imageDescription
+        }
+        //.imagesListDescription
+      }
+      //.contentList
+      a {
+        margin-top: 30px;
+        font-size: 14pt;
+        width: 160px;
+        .arrow_right {
+          top: 2px;
+        }
+      }
+    }
+    //.content
+    .tabletImage {
+      display: none;
+    }//tabletImage
+  }
+  //.latestProject
+
+  .cultureAndValues {
+    width: 100%;
+    height: 1200px;
+    background-color: #f9f9f9;
+    .container {
+      height: 1100px;
+      @include flexbox;
+      flex-direction: column;
+      justify-content: space-around;
+      .sectionHeader {
+        height: auto;
+      }
+      .content {
+        height: auto;
+        justify-content: space-around;
+        .imagesRow {
+          display: none;
+        }
+        //.imagesRow
+        .textRow {
+          height: 250px;
+          flex-direction: column;
+          justify-content: space-around;
+          .textBox {
+            width: 90%;
+            //.optionTitle
+            .optionTitle {
+              font-size: 20pt;
+            }
+            .optionText {
+              margin-top: 25px;
+              font-size: 12pt;
+            }
+            //.optionText
+          }
+          //.textRow
+        }
+        //.textBox
+      }
+      //.content
+    }
+    //.container
+  }
+  //.cultureAndValues
+
+  .clients {
+    height: 900px;
+    .container {
+      height: 800px;
+      .sectionHeader {
+        height: 200px;
+      }
+      //sectionHeader
+      .clientsComments {
+        height: 490px;
+        .commentRow {
+          height: 220px;
+
+          .photographyComment {
+            display: none;
+          }
+          //photographyComment
+          .comment {
+            height: 110%;
+            width: 100%;
+            margin-top: 100px;
+            .textBox {
+              width: 80%;
+            }
+            .text {
+              font-size: 14pt;
+              .italic {
+                padding-right: 5px;
+              }
+            }
+            .signature {
+              font-size: 12pt;
+            }
+          }
+          //comment
+        }
+        //commentRow
+      }
+      //clientsComments
+    }
+    //container
+  }
+  //clients
+
+  .contact {
+    height: 350px;
+    .container {
+      height: 150px;
+      .sectionTitle {
+        text-align: center;
+        font-size: 19pt;
+      }
+      .contactButton {
+        position: relative;
+        top: 20px;
+        height: 70px;
+        width: 195px;
+        border: solid 3px $white;
+        border-radius: 15px;
+        line-height: 30px;
+        font-size: 15pt;
+
+      }
+    }
+    //container
+  }
+  //contact
+
+  .logos {
+    height: 400px;
+    .container {
+      height: 100%;
+      .logosBox {
+        @include flexbox;
+        flex-direction: column;
+        justify-content: space-around;
+        .envato {
+          height: auto;
+          width: 90%;
+        }
+        .wordPress {
+          height: auto;
+          width: 90%;
+        }
+        .tuts {
+          height: auto;
+          width: 90%;
+        }
+        .microlancer {
+          height: auto;
+          width: 90%;
+        }
+      }
+      //logosBox
+    }
+    //container
+  }
+  //logos
+
+  .bottomBox {
+    height: 1000px;
+    .container {
+      height: 95%;
+      width: 100%;
+      @include flexbox;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      .contentBox {
+        width: 50%;
+        height: 250px;
+        .optionTitle {
+          font-size: 12pt;
+        }
+        //optionTitle
+        .content {
+          height: 201px;
+          .imagesRow {
+            width: 40px;
+            .location {
+              margin-bottom: 30px;
+            }
+            .phone {
+              left: 2px;
+              margin-bottom: 22px;
+            }
+          }
+          //imageRow
+
+          .imageDescription {
+
+            p {
+              margin-bottom: 16px;
+              font-size: 10pt;
+            }
+            a {
+              font-size: 10pt;
+            }
+            .mail {
+              top: 30px;
+            }
+          }
+          //imageDescription
+          .first {
+            width: 200px;
+          }
+
+          .news {
+            width: 26px;
+            height: 21px;
+          }
+          .media {
+            width: 17px;
+            height: 20px;
+            left: 4px;
+          }
+        }
+        //content
+      }
+      //contentBox
+    }
+    //container
+  }
+  //bottomBox
+
+  .contentTweet {
+    height: 201px;
+  }
+  .tweetBox {
+    max-width: 300px;
+    .tweeterLogo {
+      width: 43px;
+    }
+    .tweet {
+      width: 255px;
+      p {
+        padding-left: 7px;
+        font-size: 10pt;
+      }
+      .hash {
+        padding-left: 7px;
+        font-size: 10pt;
+      }
+      .published {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 8pt;
+      }
+    }
+    //tweet
+  }
+  //tweetBox
+
+  footer {
+    height: 100px;
+    .container {
+      .iconBox {
+        width: 191px;
+        height: 55px;
+        img {
+          height: 41px;
+          width: 41px;
+        }
+
+      }
+      //iconBox
+      p {
+        font-size: 7.5pt;
+        line-height: 7px;
+        margin-left: -40px;
+      }
+    }
+    //container
+  }
+  //footer
+
+}//media max 699

@@ -163,7 +163,8 @@
       flex-direction: column;
       justify-content: space-around; }
       .cultureAndValues .container .sectionHeader {
-        height: 70px; }
+        height: 70px;
+        background-color: rebeccapurple; }
       .cultureAndValues .container .content {
         height: 206.03px;
         justify-content: space-between; }
